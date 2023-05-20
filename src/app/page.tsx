@@ -42,8 +42,8 @@ export default function Home() {
                 </Tab>
               ))}
             </Tab.List>
-            <Tab.Panels className="h-full bg-blue-200 max-w-[900px] w-full p-2 sm:p-4">
-              <Tab.Panel className="h-full">All</Tab.Panel>
+            <Tab.Panels className="h-full bg-gradient-to-br from-cyan-200 to-emerald-950 max-w-[900px] w-full p-2 sm:p-4">
+              <Tab.Panel className="flex justify-center">All</Tab.Panel>
               <Tab.Panel>Portraits</Tab.Panel>
               <Tab.Panel>Nature</Tab.Panel>
             </Tab.Panels>
