@@ -52,27 +52,27 @@ export default function Home() {
                   columnClassName=""
                 >
                   <img
-                    src="/images/25-image.jpg"
+                    src="/nature/25-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/63-image.jpg"
+                    src="/nature/63-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/74-image.jpg"
+                    src="/nature/74-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/117-117-image.jpg"
+                    src="/nature/117-117-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/125-image.jpg"
+                    src="/nature/125-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
