@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tab } from "@headlessui/react";
+import Masonry from "react-masonry-css";
 
 const tabs = [
   { key: "all", display: "All" },
@@ -12,8 +13,8 @@ const tabs = [
 
 export default function Home() {
   return (
-    <div className=" h-full bg-gradient-to-br from-black to-emerald-950">
-      <header className="flex justify-between items-center h-[90px] px-6">
+    <div className=" h-full bg-gradient-to-br from-black to-emerald-950 overflow-auto">
+      <header className="fixed top-0 flex w-full z-10 justify-between items-center h-[90px] px-6">
         {/* <div className="text-transparent">hm</div> */}
         <div className="">Photography Portfolio</div>
         <Link
@@ -26,7 +27,7 @@ export default function Home() {
         </Link>
       </header>
 
-      <main className="grow">
+      <main className="pt-[110px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
             <Tab.List className="flex items-center gap-12">
@@ -42,8 +43,41 @@ export default function Home() {
                 </Tab>
               ))}
             </Tab.List>
-            <Tab.Panels className="h-full bg-gradient-to-br from-cyan-200 to-emerald-950 max-w-[900px] w-full p-2 sm:p-4">
-              <Tab.Panel className="flex justify-center">All</Tab.Panel>
+            {/* bg-gradient-to-br from-cyan-200 to-emerald-950 bg-opacity-90 */}
+            <Tab.Panels className="h-full justify-center items-center max-w-[900px] w-full p-2 sm:p-4 my-6">
+              <Tab.Panel className="overflow-auto">
+                <Masonry
+                  breakpointCols={2}
+                  className="flex gap-2"
+                  columnClassName=""
+                >
+                  <img
+                    src="/images/nature/25-image.jpg"
+                    alt="image"
+                    className="my-2"
+                  ></img>
+                  <img
+                    src="/images/nature/63-image.jpg"
+                    alt="image"
+                    className="my-2"
+                  ></img>
+                  <img
+                    src="/images/nature/74-image.jpg"
+                    alt="image"
+                    className="my-2"
+                  ></img>
+                  <img
+                    src="/images/nature/117-117-image.jpg"
+                    alt="image"
+                    className="my-2"
+                  ></img>
+                  <img
+                    src="/images/nature/125-image.jpg"
+                    alt="image"
+                    className="my-2"
+                  ></img>
+                </Masonry>
+              </Tab.Panel>
               <Tab.Panel>Portraits</Tab.Panel>
               <Tab.Panel>Nature</Tab.Panel>
             </Tab.Panels>
