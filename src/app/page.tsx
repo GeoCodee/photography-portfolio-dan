@@ -30,7 +30,7 @@ export default function Home() {
       <main className="pt-[110px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
-            <Tab.List className="flex items-center gap-12">
+            <Tab.List className="flex items-center gap-12 uppercase">
               {tabs.map((tab) => (
                 <Tab key={tab.key} className="p-2">
                   {({ selected }) => (
@@ -52,27 +52,27 @@ export default function Home() {
                   columnClassName=""
                 >
                   <img
-                    src="/images/nature/25-image.jpg"
+                    src="/images/25-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/nature/63-image.jpg"
+                    src="/images/63-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/nature/74-image.jpg"
+                    src="/images/74-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/nature/117-117-image.jpg"
+                    src="/images/117-117-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
                   <img
-                    src="/images/nature/125-image.jpg"
+                    src="/images/125-image.jpg"
                     alt="image"
                     className="my-2"
                   ></img>
